@@ -14,4 +14,5 @@ func main() {
 	fmt.Println("Packages!")
 	total := calculateData()
 	fmt.Println(total)
+	fmt.Println(utils.MakeExcited("my name is andrew"))
 }

@@ -17,6 +17,12 @@ func describeUser(u User) string {
 	return desc
 }
 
+func (u *user) describe() string {
+  desc := fmt.Sprintf("Name: %s %s, Email: %s, ID: %d", u.firstName, u.lastName, u.email, u.ID)
+	return desc
+
+}
+
 func main() {
   user := User{ID: 1, firstName: "Marilyn", lastName: "Monroe", email: "marilyn.monroe@gmail.com"}
   desc := describeUser(user)
@@ -53,4 +59,5 @@ Note that methods DO NOT require the `&` operator to permanently modify the stru
 - Functions that control/modify state
 
 ## Exercise 9
+
 `09_methods/exercise_9a.md`

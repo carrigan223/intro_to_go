@@ -38,7 +38,7 @@ func TestMakeExcited(t *testing.T) {
 	expected := "OMG SO EXCITING!"
 	actual := MakeExcited("omg so exciting")
 	if actual != expected {
-		t.Errorf("Average was incorrect! Expected: %s, Actual: %s", expected, actual)
+		t.Errorf("String does not match, Actual: %s, Expected: %s", actual, expected)
 	}
 }
 ```
